@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: dymlonna
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: SESSION_SECRET
+        value: e000a2e7cc46cb8dad9edf87c12391ad
